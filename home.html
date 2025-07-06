@@ -4,6 +4,1042 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>3. Áp dụng Grid System vào layout trang web</title>
+
+        <!-- Styles -->
+        <link rel="stylesheet" href="./assets/css/reset.css" />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+        <link rel="stylesheet" href="./assets/css/grid.css" />
+
+        <!-- Icons -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,500;1,500&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Favicon -->
+        <link
+            rel="icon"
+            type="image/png"
+            href="./assets/favicon/favicon-96x96.png"
+            sizes="96x96"
+        />
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="./assets/favicon/favicon.svg"
+        />
+        <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/favicon/apple-touch-icon.png"
+        />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
     </head>
-    <body></body>
+    <body>
+        <div class="wrapper">
+            <!-- Top page -->
+            <div class="top-page">
+                <div class="container">
+                    <!-- Header -->
+                    <div class="header">
+                        <!-- Navigation -->
+                        <ul class="nav d-md-none">
+                            <li>
+                                <a href="#!">Home</a>
+                            </li>
+                            <li>
+                                <a href="#!">Menu</a>
+                            </li>
+                            <li>
+                                <a href="#!">Blog</a>
+                            </li>
+                            <li>
+                                <a href="#!">Pages</a>
+                            </li>
+                            <li>
+                                <a href="#!">Contact</a>
+                            </li>
+                        </ul>
+
+                        <!-- Logo -->
+                        <button class="menu d-none d-md-block">
+                            <img src="./assets/img/img-menu.svg" alt="" />
+                        </button>
+                        <a href="./">
+                            <img
+                                src="./assets/img/img-logo.svg"
+                                alt=""
+                                class="logo"
+                        /></a>
+
+                        <!-- Table reservation -->
+                        <div class="table-reservation">
+                            <span class="time-open d-sm-none">
+                                11:24 we’re open
+                            </span>
+                            <a href="#!" class="table-reserve">
+                                Table Reservation
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Hero -->
+                    <div class="hero row g-3">
+                        <div class="info col-7 col-md-12">
+                            <p class="greeting">Hi, new friend!</p>
+                            <h2 class="title">
+                                We do not cook, we create your emotions!
+                            </h2>
+                            <p class="desc">
+                                There's evidence that cooking, like other
+                                creative practices, can boost well-being,
+                                self-esteem, and other measures of mental
+                                health.
+                            </p>
+                            <a href="#!" class="cta-btn s-line">Our menu</a>
+                        </div>
+                        <div class="img-food-wrap col-5 col-md-12">
+                            <img
+                                src="./assets/img/img-food-1.png"
+                                alt=""
+                                class="img-food-1"
+                            />
+                            <img
+                                src="./assets/img/img-food-2.png"
+                                alt=""
+                                class="img-food-2"
+                            />
+                            <img
+                                src="./assets/img/img-food-3.png"
+                                alt=""
+                                class="img-food-3"
+                            />
+                            <img
+                                src="./assets/img/img-food-4.png"
+                                alt=""
+                                class="img-food-4"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Main -->
+            <div class="main">
+                <!-- Stats -->
+                <div class="stats">
+                    <div class="container">
+                        <div class="restaurant-stats gy-md-4 row">
+                            <div class="restaurant col-4 col-md-12">
+                                <strong class="restaurant-qty">06</strong>
+                                <span>Number Restaurant</span>
+                            </div>
+                            <div class="new-dishes col-4 col-md-12">
+                                <strong class="new-dishes-qty">68</strong>
+                                <span>New Food Menu Dishes</span>
+                            </div>
+                            <div class="experience-year col-4 col-md-12">
+                                <strong class="experience-year-qty">36</strong>
+                                <span>Years of experience</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Popular food -->
+                <div class="popular-food">
+                    <div class="container">
+                        <h2 class="title">Most popular food</h2>
+                        <p class="desc">
+                            A list of most popular Bangladeshi food including
+                            mains, drinks, and deserts you must try while in
+                            Bangladesh, for an authentic experience. Check now!
+                        </p>
+                        <div
+                            class="food-list row gy-lg-3 row-cols-3 row-cols-lg-1"
+                        >
+                            <!-- Food item 1 -->
+                            <div class="col">
+                                <div class="food-item">
+                                    <img
+                                        src="./assets/img/img-popular-food-1.png"
+                                        alt=""
+                                        class="thumb w-lg-100"
+                                    />
+                                    <div class="body">
+                                        <div class="title-wrap">
+                                            <h3 class="title">
+                                                <a href="#!"
+                                                    >Schezwan Noodles</a
+                                                >
+                                            </h3>
+                                            <span class="price">$49</span>
+                                        </div>
+                                        <p class="desc">
+                                            Fresh toasted sourdough bread with
+                                            olive oil and pomegranate.
+                                        </p>
+                                        <div class="row-wrap">
+                                            <a
+                                                href="#!"
+                                                class="order-btn s-line"
+                                                >Order Now</a
+                                            >
+                                            <div class="stars-group">
+                                                <img
+                                                    src="./assets/img/icon-star.svg"
+                                                    alt=""
+                                                    class="star"
+                                                />
+                                                <img
+                                                    src="./assets/img/icon-star.svg"
+                                                    alt=""
+                                                    class="star"
+                                                />
+                                                <img
+                                                    src="./assets/img/icon-star.svg"
+                                                    alt=""
+                                                    class="star"
+                                                />
+                                                <img
+                                                    src="./assets/img/icon-star.svg"
+                                                    alt=""
+                                                    class="star"
+                                                />
+                                                <img
+                                                    src="./assets/img/icon-star.svg"
+                                                    alt=""
+                                                    class="star"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Food item 2 -->
+                            <div class="col">
+                                <div class="food-item">
+                                    <img
+                                        src="./assets/img/img-popular-food-2.png"
+                                        alt=""
+                                        class="thumb w-lg-100"
+                                    />
+                                    <div class="body">
+                                        <div class="title-wrap">
+                                            <h3 class="title">
+                                                <a href="#!"
+                                                    >Schezwan Noodles</a
+                                                >
+                                            </h3>
+                                            <span class="price">$49</span>
+                                        </div>
+                                        <p class="desc">
+                                            Fresh toasted sourdough bread with
+                                            olive oil and pomegranate.
+                                        </p>
+                                        <div class="row-wrap">
+                                            <a
+                                                href="#!"
+                                                class="order-btn s-line"
+                                                >Order Now</a
+                                            >
+                                            <div class="stars-group">
+                                                <img
+                                                    src="./assets/img/icon-star.svg"
+                                                    alt=""
+                                                    class="star"
+                                                />
+                                                <img
+                                                    src="./assets/img/icon-star.svg"
+                                                    alt=""
+                                                    class="star"
+                                                />
+                                                <img
+                                                    src="./assets/img/icon-star.svg"
+                                                    alt=""
+                                                    class="star"
+                                                />
+                                                <img
+                                                    src="./assets/img/icon-star.svg"
+                                                    alt=""
+                                                    class="star"
+                                                />
+                                                <img
+                                                    src="./assets/img/icon-start-gray.svg"
+                                                    alt=""
+                                                    class="star"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Food item 3 -->
+                            <div class="col">
+                                <div class="food-item">
+                                    <img
+                                        src="./assets/img/img-popular-food-3.png"
+                                        alt=""
+                                        class="thumb w-lg-100"
+                                    />
+                                    <div class="body">
+                                        <div class="title-wrap">
+                                            <h3 class="title">
+                                                <a href="#!"
+                                                    >Schezwan Noodles</a
+                                                >
+                                            </h3>
+                                            <span class="price">$49</span>
+                                        </div>
+                                        <p class="desc">
+                                            Fresh toasted sourdough bread with
+                                            olive oil and pomegranate.
+                                        </p>
+                                        <div class="row-wrap">
+                                            <a
+                                                href="#!"
+                                                class="order-btn s-line"
+                                                >Order Now</a
+                                            >
+                                            <div class="stars-group">
+                                                <img
+                                                    src="./assets/img/icon-star.svg"
+                                                    alt=""
+                                                    class="star"
+                                                />
+                                                <img
+                                                    src="./assets/img/icon-star.svg"
+                                                    alt=""
+                                                    class="star"
+                                                />
+                                                <img
+                                                    src="./assets/img/icon-star.svg"
+                                                    alt=""
+                                                    class="star"
+                                                />
+                                                <img
+                                                    src="./assets/img/icon-star.svg"
+                                                    alt=""
+                                                    class="star"
+                                                />
+                                                <img
+                                                    src="./assets/img/icon-start-gray.svg"
+                                                    alt=""
+                                                    class="star"
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="explore-btn-wrap">
+                            <a href="#!" class="explore-btn">
+                                <span>Explore All Food</span>
+                                <i
+                                    class="arrow-right fa-solid fa-arrow-right"
+                                ></i>
+                            </a>
+                        </div>
+                    </div>
+                    <img
+                        src="./assets/img/icon-8p-star.png"
+                        alt=""
+                        class="icon-8p-start d-md-none"
+                    />
+                </div>
+
+                <!-- CONTACT-OPENING_HOUR -->
+                <div class="contact-opening_hour">
+                    <div class="container">
+                        <div class="row g-0 row-cols-2 row-cols-md-1">
+                            <div class="col">
+                                <div class="contact">
+                                    <h3 class="title">Find us gere</h3>
+                                    <p class="info">
+                                        <span>
+                                            Avenue Marina 34568 NY (U.S)
+                                        </span>
+                                        <span>+0123 456 7890</span>
+                                        <span>hellouihut@gmail.com</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="opening-hour">
+                                    <h3 class="title">Opening Times</h3>
+                                    <div class="time">
+                                        <span class="day">Mon</span>
+                                        <span class="hour">17:00 to 23:00</span>
+                                    </div>
+                                    <div class="time">
+                                        <span class="day">Wed</span>
+                                        <span class="hour">19:00 to 24:00</span>
+                                    </div>
+                                    <div class="time">
+                                        <span class="day">Thu</span>
+                                        <span class="hour">14:00 to 18:00</span>
+                                    </div>
+                                    <div class="time">
+                                        <span class="day">Fr</span>
+                                        <span class="hour">16:00 to 24:00</span>
+                                    </div>
+                                    <div class="time">
+                                        <span class="day">Sat/Sun</span>
+                                        <span class="hour">20:00 to 4:00</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Menu food -->
+                <div class="menu-food">
+                    <div class="container">
+                        <p class="sub-title">Our menu</p>
+                        <h2 class="title">Choose & Taste What You Like</h2>
+                        <p class="desc">
+                            A list of top Bangladeshi food including mains,
+                            drinks, and deserts you must try while in
+                            Bangladesh, for an authentic experience. Check now!
+                        </p>
+                        <ul class="menu flex-sm-wrap">
+                            <li>
+                                <h4><a href="#!">All</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="#!">Appetizer</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="#!">Soup</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="#!">Dessert</a></h4>
+                            </li>
+                            <li>
+                                <h4><a href="#!">Drinks</a></h4>
+                            </li>
+                        </ul>
+                        <div class="line"></div>
+                        <div class="row g-3 row-cols-2 row-cols-md-1">
+                            <!-- Item 1 -->
+                            <div class="col">
+                                <div class="item">
+                                    <img
+                                        src="./assets/img/img-food-menu-1.png"
+                                        alt=""
+                                    />
+                                    <h4 class="title">
+                                        Chawli Beans and Mint Burger
+                                    </h4>
+                                    <h4 class="price">$11</h4>
+                                </div>
+                            </div>
+
+                            <!-- Item 2 -->
+                            <div class="col">
+                                <div class="item">
+                                    <img
+                                        src="./assets/img/img-food-menu-2.png"
+                                        alt=""
+                                    />
+                                    <h4 class="title">
+                                        Raw Chicken Fillet Garlic
+                                    </h4>
+                                    <h4 class="price">$25</h4>
+                                </div>
+                            </div>
+
+                            <!-- Item 3 -->
+                            <div class="col">
+                                <div class="item">
+                                    <img
+                                        src="./assets/img/img-food-menu-4.png"
+                                        alt=""
+                                    />
+                                    <h4 class="title">
+                                        American Chopsuey, Jain Recipe
+                                    </h4>
+                                    <h4 class="price">$16</h4>
+                                </div>
+                            </div>
+
+                            <!-- Item 4-->
+                            <div class="col">
+                                <div class="item">
+                                    <img
+                                        src="./assets/img/img-food-menu-3.png"
+                                        alt=""
+                                    />
+                                    <h4 class="title">
+                                        Makai Shorba, Thick Corn Soup
+                                    </h4>
+                                    <h4 class="price">$14</h4>
+                                </div>
+                            </div>
+
+                            <!-- Item 5 -->
+                            <div class="col">
+                                <div class="item">
+                                    <img
+                                        src="./assets/img/img-food-menu-6.png"
+                                        alt=""
+                                    />
+                                    <h4 class="title">
+                                        Paneer Nuggets, Quick Paneer Deep-fried
+                                    </h4>
+                                    <h4 class="price">$15</h4>
+                                </div>
+                            </div>
+
+                            <!-- Item 6 -->
+                            <div class="col">
+                                <div class="item">
+                                    <img
+                                        src="./assets/img/img-food-menu-5.png"
+                                        alt=""
+                                    />
+                                    <h4 class="title">
+                                        Healthy Salmon Power Bowl
+                                    </h4>
+                                    <h4 class="price">$09</h4>
+                                </div>
+                            </div>
+
+                            <!-- Item 7 -->
+                            <div class="col">
+                                <div class="item">
+                                    <img
+                                        src="./assets/img/img-food-menu-7.png"
+                                        alt=""
+                                    />
+                                    <h4 class="title">
+                                        Stir Fried Mixed Vegetables in Butter
+                                    </h4>
+                                    <h4 class="price">$23</h4>
+                                </div>
+                            </div>
+
+                            <!-- Item 8 -->
+                            <div class="col">
+                                <div class="item">
+                                    <img
+                                        src="./assets/img/img-food-menu-8.png"
+                                        alt=""
+                                    />
+                                    <h4 class="title">
+                                        Paneer N Cheese Roll ( Wraps and Rolls)
+                                    </h4>
+                                    <h4 class="price">$10</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="services">
+                    <div class="container">
+                        <h2 class="title">Visit Our Restaurant</h2>
+                        <p class="desc">
+                            Quality country-style menu selection, friendly and
+                            efficient service, combined with genuine value has
+                            kept Our Best serving families like yours for over
+                            28.
+                        </p>
+                        <div class="row">
+                            <div class="col-4 col-lg-12">
+                                <div class="img-wrap d-flex flex-column gap-3">
+                                    <img
+                                        src="./assets/img/img-service-1.png"
+                                        alt=""
+                                        class="img-1 w-lg-100"
+                                    />
+                                    <img
+                                        src="./assets/img/img-service-4.png"
+                                        alt=""
+                                        class="img-4 d-lg-none"
+                                    />
+                                </div>
+                            </div>
+                            <div class="col-4 d-lg-none">
+                                <img
+                                    src="./assets/img/img-service-2.png"
+                                    alt=""
+                                    class="img-2"
+                                />
+                            </div>
+                            <div class="col-4 d-lg-none">
+                                <div class="img-wrap d-flex flex-column gap-3">
+                                    <img
+                                        src="./assets/img/img-service-3.png"
+                                        alt=""
+                                        class="img-3"
+                                    />
+                                    <img
+                                        src="./assets/img/img-service-5.png"
+                                        alt=""
+                                        class="img-5"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Booking -->
+                <div class="booking">
+                    <div class="container">
+                        <div class="inner">
+                            <div class="row g-0 row-cols-2 row-cols-md-1">
+                                <div class="col">
+                                    <div class="book-wrap">
+                                        <h3 class="title">
+                                            Reserve ! Book Now
+                                        </h3>
+
+                                        <div class="date-guests-wrap d-flex">
+                                            <div
+                                                class="date d-flex flex-column"
+                                            >
+                                                <h4>Set date</h4>
+                                                <div class="date-option">
+                                                    <span>21</span>
+                                                    <span>Sep</span>
+                                                    <button
+                                                        class="chevron-down-btn"
+                                                    >
+                                                        <i
+                                                            class="fa-solid fa-chevron-down"
+                                                        ></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class="guests d-flex flex-column"
+                                            >
+                                                <h4>Guests</h4>
+                                                <div class="guests-option">
+                                                    <span>2</span>
+                                                    <button
+                                                        class="chevron-up-btn"
+                                                    >
+                                                        <i
+                                                            class="fa-solid fa-chevron-up"
+                                                        ></i>
+                                                    </button>
+                                                    <button
+                                                        class="chevron-down-btn"
+                                                    >
+                                                        <i
+                                                            class="fa-solid fa-chevron-down"
+                                                        ></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a href="#!" class="book-btn w-md-100">
+                                            Book now
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="bg-booking"></div>
+                                </div>
+                            </div>
+                            <img
+                                src="./assets/img/icon-booking-decor.png"
+                                alt=""
+                                class="d-lg-none"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Daily offer -->
+                <div class="daily-offer">
+                    <div class="container">
+                        <h2 class="title">Our Daily Offers</h2>
+                        <div class="row gy-md-3">
+                            <div class="col-6 col-md-12">
+                                <div class="discount">
+                                    <div class="inner">
+                                        <p class="title">Lunch Time</p>
+                                        <p class="discount-rate">
+                                            <strong>30%</strong>
+                                            off
+                                        </p>
+                                        <p class="desc">
+                                            We love food, lots of different and
+                                            food, just like you.
+                                        </p>
+                                        <a href="#!" class="order-btn"
+                                            >Order Now</a
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-12">
+                                <div class="food-list row">
+                                    <!-- Food item 1 -->
+                                    <div class="col-12">
+                                        <div
+                                            class="food-item d-flex flex-md-column"
+                                        >
+                                            <img
+                                                src="./assets/img/img-daily-offer-food-1.png"
+                                                alt=""
+                                                class="w-md-100"
+                                            />
+                                            <div class="food-title-wrap">
+                                                <h4 class="title">
+                                                    Spicy Club
+                                                </h4>
+                                                <p class="desc">
+                                                    Pork, chcken and vegetable
+                                                    fried rolls served with
+                                                    lettuce wraps
+                                                </p>
+                                            </div>
+                                            <h4 class="price">$42</h4>
+                                        </div>
+                                    </div>
+                                    <!-- Food item 2 -->
+                                    <div class="col-12">
+                                        <div
+                                            class="food-item d-flex flex-md-column"
+                                        >
+                                            <img
+                                                src="./assets/img/img-daily-offer-food-2.png"
+                                                alt=""
+                                                class="w-md-100"
+                                            />
+                                            <div class="food-title-wrap">
+                                                <h4 class="title">
+                                                    Spicy Club
+                                                </h4>
+                                                <p class="desc">
+                                                    Pork, chcken and vegetable
+                                                    fried rolls served with
+                                                    lettuce wraps
+                                                </p>
+                                            </div>
+                                            <h4 class="price">$42</h4>
+                                        </div>
+                                    </div>
+                                    <!-- Food item 3 -->
+                                    <div class="col-12">
+                                        <div
+                                            class="food-item d-flex flex-md-column"
+                                        >
+                                            <img
+                                                src="./assets/img/img-daily-offer-food-3.png"
+                                                alt=""
+                                                class="w-md-100"
+                                            />
+                                            <div class="food-title-wrap">
+                                                <h4 class="title">
+                                                    Spicy Club
+                                                </h4>
+                                                <p class="desc">
+                                                    Pork, chcken and vegetable
+                                                    fried rolls served with
+                                                    lettuce wraps
+                                                </p>
+                                            </div>
+                                            <h4 class="price">$42</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Features banner -->
+                <div class="features-banner">
+                    <div class="list">
+                        <div class="item">
+                            <p class="title">Super Taste</p>
+                        </div>
+                        <div class="item">
+                            <img
+                                src="./assets/img/icon-features-banner-1.png"
+                                alt=""
+                            />
+                            <p class="title">Self Services</p>
+                        </div>
+                        <div class="item">
+                            <img
+                                src="./assets/img/icon-features-banner-2.png"
+                                alt=""
+                            />
+                            <p class="title">Best Food</p>
+                        </div>
+                        <div class="item">
+                            <img
+                                src="./assets/img/icon-features-banner-3.png"
+                                alt=""
+                            />
+                            <p class="title">Fast Delivery</p>
+                        </div>
+                        <div class="item">
+                            <img
+                                src="./assets/img/icon-features-banner-4.png"
+                                alt=""
+                            />
+                            <p class="title">Super Taste</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Chef -->
+                <div class="chef">
+                    <div class="container">
+                        <h2 class="title">They will cook for you</h2>
+                        <p class="desc">
+                            Our Diners can enjoy cooking for themselves, or
+                            visiting a curated selection of restaurants in the
+                            area. They will cook for you and make sure you have
+                            a home away from home at all times.
+                        </p>
+                        <div
+                            class="list-chef row gy-lg-4 row-cols-3 row-cols-lg-2 row-cols-md-1"
+                        >
+                            <div class="col">
+                                <div class="chef-member">
+                                    <img
+                                        src="./assets/img/img-chef-1.png"
+                                        alt=""
+                                        class="w-lg-100"
+                                    />
+                                    <h4 class="name">Jubed Ahmed</h4>
+                                    <p class="role">Chef</p>
+                                    <img
+                                        src="./assets/img/icon-8p-star.png"
+                                        alt=""
+                                        class="img-chef-decor d-lg-none"
+                                    />
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="chef-member">
+                                    <img
+                                        src="./assets/img/img-chef-2.png"
+                                        alt=""
+                                        class="w-lg-100"
+                                    />
+                                    <h4 class="name">Delwar hussen</h4>
+                                    <p class="role">Assisten chef</p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="chef-member">
+                                    <img
+                                        src="./assets/img/img-chef-3.png"
+                                        alt=""
+                                        class="w-lg-100"
+                                    />
+                                    <h4 class="name">Tajul Islam</h4>
+                                    <p class="role">Chef</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent article -->
+                <div class="recent-article">
+                    <div class="container">
+                        <p class="our-blog">Our menu</p>
+                        <h2 class="title">Recent Articles</h2>
+                        <div class="row gy-4 row-cols-2 row-cols-lg-1">
+                            <div class="col">
+                                <img
+                                    src="./assets/img/img-food-article-1.png"
+                                    alt=""
+                                    class="img-food-article w-lg-100"
+                                />
+                            </div>
+                            <div class="col">
+                                <div class="article-content">
+                                    <p class="date">August 6, 2022</p>
+                                    <h4 class="title">
+                                        The Most Expensive Cup of Coffee in the
+                                        Usa
+                                    </h4>
+                                    <p class="desc">
+                                        Sed ut perspiciatis unde omnis iste
+                                        natus error sit voluptatem accusantium
+                                        doloremque lauatium, totam rem aperiam
+                                        perspiciatis unde omnis.
+                                    </p>
+                                    <div class="comment-view-wrap">
+                                        <p class="comment">Comments 165</p>
+                                        <p class="view">View 1265</p>
+                                    </div>
+                                    <a href="#!" class="read-btn">Read Now</a>
+                                </div>
+                            </div>
+                            <div class="col order-lg-3">
+                                <div class="article-content">
+                                    <p class="date">August 6, 2022</p>
+                                    <h4 class="title">
+                                        Chicken Soup With Spring Veggies Aand
+                                        Pasta
+                                    </h4>
+                                    <p class="desc">
+                                        Sed ut perspiciatis unde omnis iste
+                                        natus error sit voluptatem accusantium
+                                        doloremque lauatium, totam rem aperiam
+                                        perspiciatis unde omnis.
+                                    </p>
+                                    <div class="comment-view-wrap">
+                                        <p class="comment">Comments 165</p>
+                                        <p class="view">View 1265</p>
+                                    </div>
+                                    <a href="#!" class="read-btn">Read Now</a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img
+                                    src="./assets/img/img-food-article-2.png"
+                                    alt=""
+                                    class="img-food-article w-lg-100"
+                                />
+                            </div>
+                            <div class="explore-btn-wrap order-lg-last">
+                                <a href="#!" class="explore-btn">
+                                    <span>Explore All Food</span>
+                                    <i
+                                        class="arrow-right fa-solid fa-arrow-right"
+                                    ></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Subscription -->
+                <div class="subscription">
+                    <div class="container">
+                        <div class="row gy-3 flex-column">
+                            <div class="col-5 col-md-12">
+                                <h3 class="title">Newsletter</h3>
+                                <p class="desc">
+                                    Subscribe to our newsletter and receive 15%
+                                    discount from your order.
+                                </p>
+                            </div>
+                            <div class="col-5 offset-2 col-md-12 offset-md-0">
+                                <div class="enter-email">
+                                    <p class="sub-title">
+                                        Enter your email address
+                                    </p>
+                                    <i
+                                        class="arrow-right-icon fa-solid fa-arrow-right"
+                                    ></i>
+                                </div>
+                                <div class="line"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <div class="container">
+                    <div class="row gy-md-4">
+                        <div class="col-3 col-md-12">
+                            <img
+                                src="./assets/img/img-footer-logo.svg"
+                                alt=""
+                                class="logo"
+                            />
+                            <p class="desc d-md-none">
+                                Download the WowWraps app today.
+                            </p>
+                            <div
+                                class="app-download-wrap flex-lg-column d-md-none"
+                            >
+                                <img
+                                    src="./assets/img/img-appstore.svg"
+                                    alt=""
+                                    class="app-store"
+                                />
+                                <img
+                                    src="./assets/img/img-ggplay.svg"
+                                    alt=""
+                                    class="gg-store"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-2 col-md-6">
+                            <p class="title">Useful Link</p>
+                            <ul class="list">
+                                <li>
+                                    <a href="#!">Home</a>
+                                    <a href="#!">About Us</a>
+                                    <a href="#!">Services</a>
+                                    <a href="#!">Booking</a>
+                                    <a href="#!">Menu</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-3 col-md-6">
+                            <p class="title">Contact Info</p>
+                            <ul class="list">
+                                <li>
+                                    <a href="#!"
+                                        >Silk St, Barbican, London EC2Y 8DS,
+                                        UK</a
+                                    >
+                                    <a href="#!">info@example.com</a>
+                                    <a href="#!">800-123-45-678</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-2 col-md-6 col-sm-12">
+                            <p class="title">Follow us</p>
+                            <ul class="list">
+                                <li>
+                                    <a href="#!" class="social-link"
+                                        >Facebook</a
+                                    >
+                                    <a href="#!" class="social-link"
+                                        >Instagram</a
+                                    >
+                                    <a href="#!" class="social-link"
+                                        >Linkedin</a
+                                    >
+                                    <a href="#!" class="social-link">Twitter</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-2 col-md-6 col-sm-12">
+                            <p class="title">Legal</p>
+                            <p class="website">Website by uihut.com</p>
+                            <p class="copy-right">©2022. All Rights Reserved</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>
